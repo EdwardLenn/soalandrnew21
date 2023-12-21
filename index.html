@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="نوفر لكم منتجات أصلية عالية الجودة مع إمكانية التوصيل إلى باب المنزل و الدفع عند الإستلام">
+    <meta name="theme-color" content="var(--green)">
+    <title>sberlo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/styles.css">
+  
+    <link rel="preload" href="images/1.png" as="image" />
+    <link rel="preload" href="images/iled-1.jpg" as="image" />
+    <style>
+        .obtina{
+            text-align: center;
+            margin-bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        .radio-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: #000;
+}
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <a href=""> نعدكم بأفضل المنتجات ، وأحسن الأسعار  </a>
+            </div>
+        </div>
+       
+    </header>
+
+    <div class="header__sticky">
+        <div class="container">
+            <div class="header__sticky--wrapper">
+               
+                <div class="header__sticky--content">
+                    <div class="header__sticky--title">
+                        الحل النهائي للتخلص من الشيب و تساقط الشعر                    
+                            <span class="product__flag">أصلي</span>
+                    </div>
+                    <div class="header__sticky--rating">
+                        <div class="product__info--rating">
+                            <ul>
+                                <li><div class="star"></div></li>
+                                <li><div class="star"></div></li>
+                                <li><div class="star"></div></li>
+                                <li><div class="star"></div></li>
+                                <li><div class="star"></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="product__view">
+                <div class="product__media">
+                    <div class="product__media--wrapper">
+                        <img width="600" height="600" src="images/1.png" alt="product">
+                    </div>
+                </div>
+                <div class="product__info">
+                    <div class="product__info--title">
+                        <h1>
+                            الحل النهائي للتخلص من الشيب و تساقط الشعر                          
+                            <span class="product__flag">أصلي</span></h1>
+
+                    </div>
+                    <div class="product__info--rating">
+                        <ul>
+                            <li><div class="star"></div></li>
+                            <li><div class="star"></div></li>
+                            <li><div class="star"></div></li>
+                            <li><div class="star"></div></li>
+                            <li><div class="star"></div></li>
+                        </ul>
+                    </div>
+                    <div class="product__info--box">
+                        <div class="product__discount">
+                            <span>-30%</span>
+                        </div>
+                        <div class="product__price">
+                            <div class="price">
+                                <span class="price__new"><span>199</span> ر.س</span>
+                                <span class="price__old">349 ر.س</span>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="product__info--form">
+                        <form method="post" autocomplete="off" name="google-sheet" id="orderform">
+
+                              <div class="product__info--desc">
+                                <span>للطلب المرجو ملأ الإستمارة أسفله </span>
+                            </div>
+                            <div class="c-input__holder">
+                                <input type="text" name="name" id="name" autocomplete="off" placeholder="الإسم" required >
+                            </div>
+                            <div class="c-input__holder" > 
+                                <input style=" text-align: right;" type="tel" name="phone" id="phone" autocomplete="off" placeholder="رقم الهاتف" required >
+                            </div>
+                            <div class="c-input__holder">
+                                <input type="text" name="address" id="address" autocomplete="off" placeholder="العنوان" required >
+                            </div>
+
+                           
+
+                            <div class="c-input__holder">
+                                <button type="submit" name="submit" class="btn" id="btntest">أطـلب منتجـك الآن</button>
+                            </div>
+                            <div>
+                                <input type="hidden" name="quantity" id="quantity" value="199"/>
+                                <input type="hidden" name="product" id="product" value="sapsa"/>
+                                <input type="hidden" name="source" id="source" value="lptani"/>
+                                </div>
+
+
+                           
+
+
+                        </form>
+                    </div>
+                    <div class="product__info--details">
+
+                        <div>
+                            <H3 class="obtina">عبوتان من الصابون الأسود للعناية بالشعر والقشرة</H3>
+                        </div>
+                        <div class="image"><img class="lazy" src="images/fotosab.jpeg" alt="image"></div>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+
+ 
+
+    <div class="go-to-form">
+        <div class="btn">للطلب إضغط هنا</div>
+    </div>
+
+
+    <!-- SCRIPT -->
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.lazy.min.js'></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
